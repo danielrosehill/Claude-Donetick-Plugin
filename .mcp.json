@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "donetick": {
+      "command": "uvx",
+      "args": ["donetick-mcp"],
+      "env": {
+        "DONETICK_BASE_URL": "${DONETICK_BASE_URL}",
+        "DONETICK_USERNAME": "${DONETICK_USERNAME}",
+        "DONETICK_PASSWORD": "${DONETICK_PASSWORD}"
+      }
+    }
+  }
+}

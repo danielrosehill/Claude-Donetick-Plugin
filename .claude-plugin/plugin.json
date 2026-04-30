@@ -1,0 +1,12 @@
+{
+  "name": "donetick",
+  "version": "0.1.0",
+  "description": "Companion Claude Code plugin for the donetick-mcp server. Bundles the MCP and adds skills for chore management against a self-hosted Donetick instance — list, create, complete, label, and review chores conversationally.",
+  "author": {
+    "name": "Daniel Rosehill",
+    "url": "https://github.com/danielrosehill"
+  },
+  "repository": "https://github.com/danielrosehill/Claude-Donetick-Plugin",
+  "license": "MIT",
+  "keywords": ["donetick", "chores", "mcp", "task-management", "self-hosted"]
+}
