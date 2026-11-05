@@ -4,7 +4,6 @@ Companion plugin for [donetick-mcp](https://github.com/danielrosehill/donetick-m
 
 ## What's inside
 
-- **`.mcp.json`** — auto-launches `uvx donetick-mcp` and wires in credentials from environment.
 - **Skills:**
   - `onboard` — one-time setup: verify `uvx`, env vars, smoke-test.
   - `daily-brief` — overdue / today / this week summary.
@@ -16,19 +15,13 @@ Companion plugin for [donetick-mcp](https://github.com/danielrosehill/donetick-m
 
 ## Setup
 
-1. Install [`uv`](https://github.com/astral-sh/uv): `curl -LsSf https://astral.sh/uv/install.sh | sh`
-2. Export credentials in your shell profile:
-   ```bash
-   export DONETICK_BASE_URL="https://your-donetick-instance.example.com"
-   export DONETICK_USERNAME="your_username"
-   export DONETICK_PASSWORD="your_password"
-   ```
-3. Install the plugin from Daniel's marketplace, then restart Claude Code so the MCP picks up the env.
-4. Run `/onboard` (or just ask "is donetick connected?") to verify.
+The plugin ships no MCP connection. Tools come from the `donetick` upstream on the AI gateway, called as
+`mcp__gateway__donetick__<tool>`, or through `mcp__gateway__toolbox__call_tool` if not in your list. Run `/onboard`
+(or ask "is donetick connected?") to verify.
 
 ## Underlying MCP
 
-All chore operations go through 27 tools exposed by `donetick-mcp` — chores, subtasks, labels, timers, history. See the [MCP repo](https://github.com/danielrosehill/donetick-mcp) for the full tool list.
+All chore operations go through tools exposed by `donetick-mcp`, which runs behind the gateway (11 tools on 2026-11-05; the full server has 27) — chores, subtasks, labels, timers, history. See the [MCP repo](https://github.com/danielrosehill/donetick-mcp) for the full tool list.
 
 ## License
 
