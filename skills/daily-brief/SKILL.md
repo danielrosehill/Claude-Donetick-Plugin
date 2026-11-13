@@ -32,7 +32,7 @@ Overdue (2)
 Today (4)
   • Take out trash — 19:00 — Alice
   • Water plants — anyone
-  • Workout — Daniel
+  • Workout — Sam
   • Weekly review — 18:00
 
 This week (6) — 3 high-priority
